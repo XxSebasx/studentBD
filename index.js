@@ -4,14 +4,14 @@ const path = require("path");
 
 const app = express();
 const sequelize = require('./config/database');
-const book = require('./models/book');
+const book = require('./models/student');
 
 
 app.use(bodyParser.json());
 app.use(express.static(path.join(__dirname, "public")));
 
-const productRoutes = require("./routes/bookRoute");
-app.use("/", productRoutes);
+const studentRoutes = require("./routers/studentRouter");
+app.use("/", studentRoutes);
 
 
 sequelize.authenticate()

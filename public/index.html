@@ -6,7 +6,28 @@
     <title>Document</title>
 </head>
 <body>
-    
+    <h1>Instituto</h1>
+    <form id="formStudent">
+        <input type="text" placeholder="DNI" id="DNI">
+        <input type="text" placeholder="nombre" id="nombre">
+        <input type="text" placeholder="apellido" id="apellido">
+        <input type="text" placeholder="campus" id="campus">
+        <input type="text" placeholder="edad" id="edad">
+        <button type="submit">Add</button>
+    </form>
+
+    <input type="text" placeholder="DNI" id="DNIBuscar">
+    <button type="button" id="buscar">BUSCAR</button>
+    <button type="button" id="eliminar">ELIMINAR</button>
+    <table border="1px">
+        <thead>
+            <th>DNI</th>
+            <th>Nombre Completo</th>
+            <th>Campus</th>
+            <th>Edad</th>
+        </thead>
+        <tbody id="cuerpoTabla"></tbody>
+    </table>
 
     <script src="script.js"></script>
 </body>
